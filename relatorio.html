@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Relatório</title>
+
+  <link rel="stylesheet" href="relatorio.css">
+</head>
+
+<body>
+
+  <main class="app">
+
+    <header class="topo-relatorio">
+
+
+      <h1>Relatório</h1>
+
+      <button class="botao-calendario" aria-label="Selecionar mês">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="16" rx="2"></rect>
+          <path d="M8 3v4M16 3v4M3 10h18"></path>
+        </svg>
+      </button>
+
+    </header>
+<div class="mes-exibido"> 
+  <span id="mes-relatorio">Setembro de 2026</span>
+</div>
+<div class="area-grafico">
+
+  <div class="grafico-rosca">
+    <div class="centro-grafico">
+      <span>Total</span>
+      <strong id="total-relatorio">R$ 0,00</strong>
+    </div>
+  </div>
+
+</div>
+
+<div class="resumo-relatorio">
+
+  <div class="linha-resumo">
+    <span class="bolinha necessidade"></span>
+    <span class="nome-resumo">Necessidades</span>
+    <strong id="necessidades-relatorio">R$ 0,00 (0,00%)</strong>
+  </div>
+
+  <div class="linha-resumo">
+    <span class="bolinha desejo"></span>
+    <span class="nome-resumo">Desejos</span>
+    <strong id="desejos-relatorio">R$ 0,00 (0,00%)</strong>
+  </div>
+
+</div>
+<div id="quadro-status" class="quadro-status">
+
+  <div class="carinha-status">
+    <svg id="icone-status" viewBox="0 0 80 80">
+  <circle class="rosto" cx="40" cy="40" r="34"></circle>
+
+  <circle class="olho" cx="28" cy="32" r="3"></circle>
+  <circle class="olho" cx="52" cy="32" r="3"></circle>
+
+  <path
+    id="boca-status"
+    d="M24 46 Q40 62 56 46"
+  ></path>
+</svg>
+  </div>
+
+  <div class="texto-status">
+    <strong id="frase-status">Status dos seus gastos</strong>
+    <span id="complemento-status"></span>
+  </div>
+
+</div>
+<div id="seletor-mes" class="seletor-mes oculto">
+  <div class="seletor-mes-topo">
+    <span id="ano-seletor"></span>
+  </div>
+
+  <div class="meses-grid">
+    <button data-mes="0">Jan</button>
+    <button data-mes="1">Fev</button>
+    <button data-mes="2">Mar</button>
+    <button data-mes="3">Abr</button>
+    <button data-mes="4">Mai</button>
+    <button data-mes="5">Jun</button>
+    <button data-mes="6">Jul</button>
+    <button data-mes="7">Ago</button>
+    <button data-mes="8">Set</button>
+    <button data-mes="9">Out</button>
+    <button data-mes="10">Nov</button>
+    <button data-mes="11">Dez</button>
+  </div>
+</div>
+  </main>
+
+  <nav class="menu-inferior">
+  <button class="menu-item" onclick="window.location.href='inicio.html'">
+ <svg class="menu-icone"
+     viewBox="0 0 24 24"
+     aria-hidden="true"
+     fill="none"
+     stroke="currentColor"
+     stroke-width="2"
+     stroke-linecap="round"
+     stroke-linejoin="round">
+  <path d="M3 10.5L12 3l9 7.5V21h-6v-6H9v6H3z"></path>
+</svg>
+  <span>Início</span>
+</button>
+
+<button class="menu-item" onclick="window.location.href='historico.html'">
+ <svg class="menu-icone" viewBox="0 0 24 24" aria-hidden="true">
+  <circle cx="12" cy="12" r="8"></circle>
+  <path d="M12 7v5l3 2"></path>
+</svg>
+  <span>Histórico</span>
+</button>
+  <button class="menu-item ativo">
+  <svg class="menu-icone" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M5 20V11"></path>
+    <path d="M12 20V5"></path>
+    <path d="M19 20V8"></path>
+  </svg>
+  <span>Relatório</span>
+</button>
+  <button class="menu-item" onclick="window.location.href='vip.html'">
+  <svg class="menu-icone" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 8l4 4 4-7 4 7 4-4-2 10H6L4 8z"></path>
+  </svg>
+  <span>VIP</span>
+</button>
+</nav>
+  <script src="relatorio.js"></script>
+
+</body>
+</html>
