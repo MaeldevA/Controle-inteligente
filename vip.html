@@ -13,8 +13,10 @@
   <main class="app">
 
     <section class="topo-vip">
+
       <div class="icone-coroa">
         <svg viewBox="0 0 100 80" aria-hidden="true">
+
           <path
             d="M12 25 L30 42 L50 12 L70 42 L88 25 L80 65 H20 Z"
             fill="#FFD43B"
@@ -34,6 +36,7 @@
             stroke-width="4"
             stroke-linecap="round"
           />
+
         </svg>
       </div>
 
@@ -43,19 +46,24 @@
         Tenha acesso a recursos exclusivos e transforme
         sua relação com o dinheiro!
       </p>
+
     </section>
 
 
     <section class="recursos-vip">
+
       <h2>Recursos do VIP</h2>
 
       <div class="lista-recursos">
+
         <p><span class="check-vip">✓</span> Gráficos avançados</p>
         <p><span class="check-vip">✓</span> Metas de economia</p>
         <p><span class="check-vip">✓</span> Exportar relatórios em PDF</p>
         <p><span class="check-vip">✓</span> Dicas exclusivas</p>
         <p><span class="check-vip">✓</span> Desafios de economia</p>
+
       </div>
+
     </section>
 
 
@@ -66,11 +74,16 @@
         <span>/ mês</span>
       </div>
 
-      <button class="botao-assinar-vip" type="button" onclick="abrirPagamento()">
+      <button
+        class="botao-assinar-vip"
+        type="button"
+        onclick="abrirPagamento()"
+      >
         Assinar VIP
       </button>
 
     </section>
+
 
     <p class="cancelamento-vip">
       Cancele quando quiser.
@@ -90,6 +103,8 @@
 
       <div class="opcoes-pagamento">
 
+        <!-- PIX -->
+
         <button
           type="button"
           class="opcao-pagamento selecionado"
@@ -99,20 +114,26 @@
           Pix
         </button>
 
+
+        <!-- CARTÃO DE CRÉDITO -->
+
         <button
           type="button"
           class="opcao-pagamento"
           id="opcaoCredito"
-          onclick="selecionarPagamento('cartao')"
+          onclick="selecionarPagamento('credito')"
         >
           Cartão de crédito
         </button>
+
+
+        <!-- CARTÃO DE DÉBITO -->
 
         <button
           type="button"
           class="opcao-pagamento"
           id="opcaoDebito"
-          onclick="selecionarPagamento('cartao')"
+          onclick="selecionarPagamento('debito')"
         >
           Cartão de débito
         </button>
@@ -135,6 +156,7 @@
         </p>
 
         <div class="codigo-pix">
+
           <input
             type="text"
             id="codigoPix"
@@ -149,6 +171,7 @@
           >
             Copiar código
           </button>
+
         </div>
 
       </div>
@@ -156,50 +179,79 @@
 
       <!-- PAGAMENTO COM CARTÃO -->
 
-      <div class="area-pagamento area-cartao" id="areaCartao">
+      <div
+        class="area-pagamento area-cartao"
+        id="areaCartao"
+      >
 
         <h3>Dados do cartão</h3>
 
+
         <div class="campo-pagamento">
-          <label for="numeroCartao">Número do cartão</label>
+
+          <label for="numeroCartao">
+            Número do cartão
+          </label>
+
           <input
             type="text"
             id="numeroCartao"
             placeholder="0000 0000 0000 0000"
             maxlength="19"
           >
+
         </div>
 
+
         <div class="campo-pagamento">
-          <label for="nomeCartao">Nome no cartão</label>
+
+          <label for="nomeCartao">
+            Nome no cartão
+          </label>
+
           <input
             type="text"
             id="nomeCartao"
             placeholder="Nome completo"
           >
+
         </div>
+
 
         <div class="linha-cartao">
 
+
           <div class="campo-pagamento">
-            <label for="validadeCartao">Validade</label>
+
+            <label for="validadeCartao">
+              Validade
+            </label>
+
             <input
               type="text"
               id="validadeCartao"
               placeholder="MM/AA"
               maxlength="5"
             >
+
           </div>
 
+
           <div class="campo-pagamento">
-            <label for="cvvCartao">CVV</label>
+
+            <label for="cvvCartao">
+              CVV
+            </label>
+
             <input
               type="text"
               id="cvvCartao"
               placeholder="123"
               maxlength="3"
             >
+
           </div>
+
 
         </div>
 
@@ -222,46 +274,95 @@
 
   <nav class="menu-inferior">
 
+
+    <!-- INÍCIO -->
+
     <button
       class="menu-item"
       onclick="window.location.href='inicio.html'"
     >
-      <svg class="menu-icone" viewBox="0 0 24 24" aria-hidden="true">
+
+      <svg
+        class="menu-icone"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
         <path d="M3 10.5L12 3l9 7.5V21h-6v-6H9v6H3z"></path>
+
       </svg>
+
       <span>Início</span>
+
     </button>
 
+
+    <!-- HISTÓRICO -->
 
     <button
       class="menu-item"
       onclick="window.location.href='historico.html'"
     >
-      <svg class="menu-icone" viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="12" r="8"></circle>
+
+      <svg
+        class="menu-icone"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
+        <circle
+          cx="12"
+          cy="12"
+          r="8"
+        ></circle>
+
         <path d="M12 7v5l3 2"></path>
+
       </svg>
+
       <span>Histórico</span>
+
     </button>
 
+
+    <!-- RELATÓRIO -->
 
     <button
       class="menu-item"
       onclick="window.location.href='relatorio.html'"
     >
-      <svg class="menu-icone" viewBox="0 0 24 24" aria-hidden="true">
+
+      <svg
+        class="menu-icone"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
         <path d="M5 20V11"></path>
         <path d="M12 20V5"></path>
         <path d="M19 20V8"></path>
+
       </svg>
+
       <span>Relatório</span>
+
     </button>
 
 
-    <button class="menu-item ativo vip-ativo">
+    <!-- VIP -->
 
-      <svg class="menu-icone" viewBox="0 0 24 24" aria-hidden="true">
+    <button
+      class="menu-item ativo vip-ativo"
+    >
+
+      <svg
+        class="menu-icone"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+
         <path d="M4 8l4 4 4-7 4 7 4-4-2 10H6L4 8z"></path>
+
       </svg>
 
       <span>VIP</span>
@@ -271,123 +372,9 @@
   </nav>
 
 
-  <script>
+  <!-- JAVASCRIPT EXTERNO -->
 
-    function abrirPagamento() {
-      const pagamento = document.getElementById("pagamentoVip");
-
-      pagamento.classList.add("visivel");
-
-      setTimeout(function () {
-        pagamento.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }, 100);
-    }
-
-
-    function selecionarPagamento(tipo) {
-
-      const opcaoPix = document.getElementById("opcaoPix");
-      const opcaoCredito = document.getElementById("opcaoCredito");
-      const opcaoDebito = document.getElementById("opcaoDebito");
-
-      const areaPix = document.getElementById("areaPix");
-      const areaCartao = document.getElementById("areaCartao");
-
-
-      opcaoPix.classList.remove("selecionado");
-      opcaoCredito.classList.remove("selecionado");
-      opcaoDebito.classList.remove("selecionado");
-
-
-      if (tipo === "pix") {
-
-        opcaoPix.classList.add("selecionado");
-
-        areaPix.style.display = "block";
-        areaCartao.style.display = "none";
-
-      } else {
-
-        if (event && event.currentTarget === opcaoDebito) {
-          opcaoDebito.classList.add("selecionado");
-        } else {
-          opcaoCredito.classList.add("selecionado");
-        }
-
-        areaPix.style.display = "none";
-        areaCartao.style.display = "block";
-      }
-    }
-
-
-    function copiarPix() {
-
-      const codigo = document.getElementById("codigoPix").value;
-
-      navigator.clipboard.writeText(codigo).then(function () {
-
-        const botao = document.querySelector(".botao-copiar");
-
-        const textoOriginal = botao.textContent;
-
-        botao.textContent = "Código copiado!";
-
-        setTimeout(function () {
-          botao.textContent = textoOriginal;
-        }, 2000);
-
-      });
-
-    }
-
-
-    document.getElementById("numeroCartao").addEventListener("input", function () {
-
-      let valor = this.value.replace(/\D/g, "");
-
-      valor = valor.substring(0, 16);
-
-      let resultado = "";
-
-      for (let i = 0; i < valor.length; i++) {
-
-        if (i > 0 && i % 4 === 0) {
-          resultado += " ";
-        }
-
-        resultado += valor[i];
-      }
-
-      this.value = resultado;
-
-    });
-
-
-    document.getElementById("validadeCartao").addEventListener("input", function () {
-
-      let valor = this.value.replace(/\D/g, "");
-
-      valor = valor.substring(0, 4);
-
-      if (valor.length > 2) {
-        valor = valor.substring(0, 2) + "/" + valor.substring(2);
-      }
-
-      this.value = valor;
-
-    });
-
-
-    document.getElementById("cvvCartao").addEventListener("input", function () {
-
-      this.value = this.value.replace(/\D/g, "").substring(0, 3);
-
-    });
-
-  </script>
+  <script src="vip.js"></script>
 
 </body>
 
